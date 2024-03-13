@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = prompt("Enter a number");
+        var temp=n,sum=0,fact;
+        while(n!=0)
+        {
+            rem=n%10;
+            let fact=1;
+            for(let i=1;i<=rem;i++)
+            {
+                fact=fact*i;
+            }
+            sum=sum+fact;
+            n=parseInt(n/10);
+        }
+        if(temp==sum)
+        {
+            document.write(`${temp}  is strong number`);
+        }
+        else
+        {
+            document.write(`${temp} is not a strong number`)
+        }
+    </script>
+</body>
+</html>

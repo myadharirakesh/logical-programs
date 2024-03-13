@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polyndrome</title>
+</head>
+<body>
+    <script>
+        var n=prompt("Enter a number");
+        temp=n;
+        var sum="";
+        while(n!=0)
+        {
+            rem=n%10;
+            sum=sum+rem;
+            n=parseInt(n/10);
+
+        }
+        if(temp==sum)
+        {
+            document.write(`${sum} is a polyndrome`);
+        }
+        else
+        {
+            document.write(`${sum} is a not polyndrome`)
+        }
+       
+    </script>
+</body>
+</html>

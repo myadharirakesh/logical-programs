@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENORODD</title>
+</head>
+<body>
+    <script>
+        for(let i=1;i<=10;i++)
+        {
+            if(i%2==0)
+            {
+                document.write(`${i} <br>`)
+            }
+            
+        }
+
+        var n=prompt("Enter a number");
+        sum=0;
+        for(let i=1;i<=n;i++)
+        {
+            if(i%2==1)
+            {
+                
+                document.write(i+" ");
+                sum+=i;
+            }
+        }
+        document.write("<br> ");
+        document.write(`The sum of odd numbers:${sum}<br>`)
+
+
+
+        var a=parseInt(prompt("Enter a value"));
+        var b=parseInt(prompt("Enter b value"));
+        sum1=0;
+        for(let i=a;i<=b;i++)
+        {
+            if(i%2==0)
+            {
+                sum1+=i;
+                document.write(i+" ");
+            }
+        }
+        document.write("<br> ");
+        document.write("The sum of even numbers:"+sum1);
+    </script>
+</body>
+</html>

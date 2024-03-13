@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci serires</title>
+</head>
+<body>
+    <script>
+        var n=prompt("Enter a number");
+        var a=0,b=1,c=a+b;
+        document.write(`${a}<br>${b}<br>`)
+        while(c<=n)
+        { 
+            document.write(`${c}<br>`);
+            a=b;
+            b=c; 
+            c=(a+b);
+        }
+    </script>
+</body>
+</html>

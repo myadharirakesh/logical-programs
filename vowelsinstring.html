@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str=prompt("Enter a name");
+        var count=0;
+       var vowel=['a','e','i','o','u'];
+       for(let i=0;i<=str.length;i++){
+       vowel.forEach(vowel=>{
+        if(str[i]==vowel || str[i]==vowel.toUpperCase())
+        count++;
+       });
+    }
+        document.write(count);
+    </script>
+</body>
+</html>

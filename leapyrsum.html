@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--w.js.p to print sum of leap years b/w 1847 to 1947-->
+    <script>
+        var sum=0;
+        for(let i=2001;i<2025;i++)
+        {
+            if(i%4==0 && i%100!=0 || i%400==0)
+            {
+                sum+=i;
+            }
+        }
+        document.write(`Sum is:${sum}`);
+
+        //w.js.p tomprint following 1,11,21,31,41.....121
+        for(let k=0;k<=12;k++)
+        {
+            document.write(`${(k*10)+1} <br>`);
+        }
+    </script>
+</body>
+</html>
