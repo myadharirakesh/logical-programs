@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator 1</title>
+    <style>
+        .div1{
+            width:300px;
+            height:500px;
+           /*margin-top:150px;*/
+            border:2px solid lightgrey;
+            padding:15px;
+            border-radius:5px;
+            /*margin-left:400px;*/
+            position:absolute;
+            left:500px;
+            top:50px;
+            background-color:blue;
+            
+        }
+        h2{
+            color:yellow;
+            text-align:center;
+        }
+        input{
+           padding:10px;
+           border-radius:10px;
+           text-align:center;
+           margin-left:60px;
+           margin-top:10px;
+        }
+        .btn{
+            padding:10px;
+            width:250px;
+            margin-top:50px;
+            margin-left:30px;
+            letter-spacing:3px;
+            text-transform:uppercase;
+            border-radius:5px;
+            background-color:rgb(255, 0, 123);
+            color:white;
+          
+        }
+    </style>
+</head>
+<body>
+<div class="div1">
+    <h2>Fixed Deposite Calculator</h2>
+    <form >
+        <input type="name" placeholder="Enter a name" id="userName">
+        <br><br>
+        <input type="number" placeholder="Enter age" id="age">
+        <br><br>
+        <input type="number" placeholder="Enter amount" id="amount">
+        <br><br>
+        <input type="name" placeholder="Enter tenure" id="tenure">
+        <button class="btn" onclick="calculate()">Calculate</button>
+    </form>
+
+    <script>
+        function calculate(){
+            var uname,age,amount,tenure;
+            uname=document.getElementById("userName").value;
+            age=document.getElementById("age").value;
+            amount=document.getElementById("amount").value;
+            tenure=document.getElementById("tenure").value;
+        
+        if(age>60)
+        {
+            var interest=parseInt((amount*tenure*8)/100)
+            document.write(uname+" Maturity amount is:"+(interest+parseInt(amount)))
+        }
+        else
+        {
+            var interest=parseInt((amount*tenure*5)/100)
+            gst=(0.5/100)*interest
+            interest=interest-gst
+            document.write(uname+" Maturity amount is:"+(interest+parseInt(amount)))
+
+        }
+    }
+    </script>
+</div>
+</body>
+</html>

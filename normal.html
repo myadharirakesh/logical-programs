@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /*var str="wow";
+      if(str==str.split("").reverse().join("")){
+        document.write(str+"is polindrome")
+      }else{
+        document.write(str+"not polindrome")
+      } */
+      /*var m1=new Map();
+      m1.set(1,"one");
+      m1.set(2,"two");
+      m1.set(2,"three");
+      m1.set("hi","hello wo")
+      document.write(m1.get("hi"));
+
+      m1.forEach((el,ind)=>{
+        document.write(`<br>${ind}->${el}`);
+      })*/
+      var arr=[5,7,12,30,60,45,5,12,7];
+      var s1=new Set(arr);
+
+      var newarr=[...s1];
+      document.write("new array"+newarr+"<br>")
+
+      for(let a of s1)
+      document.write(a+"<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=prompt("Enter a ")
+        var b=prompt("Enter b ")
+        var temp1=a;
+        var temp2=b;
+        while(b!=0)
+        {
+            r=a%b;
+            a=b;
+            b=r
+        }
+        document.write("gcd : "+a+"<br>");
+        let lcm=(temp1*temp2)/a;
+        document.write("lcm: "+lcm)
+    </script>
+</body>
+</html>

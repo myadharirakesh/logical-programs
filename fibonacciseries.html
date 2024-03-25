@@ -7,15 +7,27 @@
 </head>
 <body>
     <script>
+        // var n=prompt("Enter a number");
+        // var a=0,b=1,c=a+b;
+        // document.write(`${a}<br>${b}<br>`)
+        // while(c<n)
+        // { 
+        //     document.write(`${c}<br>`);
+        //     a=b;
+        //     b=c; 
+        //     c=(a+b);
+        // }
+
         var n=prompt("Enter a number");
+      
+
         var a=0,b=1,c=a+b;
-        document.write(`${a}<br>${b}<br>`)
-        while(c<=n)
-        { 
-            document.write(`${c}<br>`);
+        for(i=1;i<=n;i++)
+        {
+            document.write(a+"<br>");
+            c=a+b;
             a=b;
-            b=c; 
-            c=(a+b);
+            b=c;
         }
     </script>
 </body>

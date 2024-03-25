@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          /*var str="rakesh";
+        var res=str.split("");
+        document.write(res+"<br>");
+        var res1=res.reverse();
+        document.write(res1+"<br>");
+        var res2=res1.join("");
+        document.write(res2+"<br>"); */
+
+
+        /*var str1="madam";
+        if(str1==str1.split("").reverse().join(""))
+        {
+            document.write(`${str1} is a polyndrome`);
+        }
+        else
+        {
+            document.write(`${str1} is not a polyndrome`)
+        } */
+        var str=prompt("Enter a string");
+        if(str==str.split("").reverse().join(""))
+        {
+            document.write(str+" is a polyndrome")
+        }
+        else
+        {
+            document.write(str+" is not a polyndrome")
+        }
+    </script>
+</body>
+</html>

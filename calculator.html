@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+            margin-left:450px;
+        }
+        input{
+            padding:5px;
+            width:200px;
+            margin-top:20px;
+            margin-left:450px;
+        }
+        .cal{
+            margin-left:500px;
+            margin-top:20px;
+            font-size:20px;
+        }
+</style>
+</head>
+<body>
+    <h1 class="abc">Fixed Deposit Calculator</h1>
+    
+    <form>
+        <input type="name" placeholder="enter username" id="username">
+        <br>
+        <input type="age" placeholder="enter age" id="age">
+        <br>
+        <input type="amount"placeholder="enter amount" id="amount"><br>
+        <input type="tenure"placeholder="enter tenure" id="tenure"><br>
+        <button class="cal" type="submit" onclick="checkcal()">calculator</button>
+    </form>
+       
+    
+    <script>
+        function checkcal()
+        {
+           
+            var uname,age,amount,tenure;
+            uname=document.getElementById("username").value;
+            age=document.getElementById("age").value;
+            amount=document.getElementById("amount").value;
+            tenure=document.getElementById("tenure").value;
+          if(age>60)
+          {
+            var interest=parseInt((amount*tenure*8)/100)
+            document.write(uname+" maturity amount is"+(interest+parseInt(amount)))
+          }
+          else{
+            var interest=parseInt((amount*tenure*5)/100)
+            gst=(0.5/100)*interest
+            interest=interest-gst
+            document.write(uname+" maturity amount is"+(interest+parseInt(amount)))
+          }
+
+        }
+
+        
+       
+    </script>
+</body>
+</html>

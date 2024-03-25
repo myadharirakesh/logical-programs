@@ -7,15 +7,12 @@
 </head>
 <body>
     <script>
-      var n1=2001,n2=2100;
-      for(let i=n1;i<n2;i++)
-      {
-        if(i%4==0 && i%100!==0 || i%400==0)
+        var otp="";
+        for(let i=0;i<=5;i++)
         {
-          document.write(i+",");
+            otp+=Math.floor(Math.random()*10)
         }
-      }
-       
+        document.write(otp)
     </script>
 </body>
 </html>
